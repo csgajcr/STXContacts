@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#FAFAFA"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_search_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:layout_margin="10dp"
+                android:background="@drawable/search_actv_shape"
+                android:completionThreshold="1"
+                android:drawableLeft="@drawable/search_icon"
+                android:drawablePadding="5dp"
+                android:hint=" 搜索联系人"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_lv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/lv_search_tips_bg"
+        android:visibility="gone"></ListView>
+</LinearLayout>
